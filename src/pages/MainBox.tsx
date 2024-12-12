@@ -1,9 +1,9 @@
 import { FileTree } from '@/components/FileTree'
 import React from 'react'
 
-type Props = {}
 
-const MainBox = (props: Props) => {
+
+const MainBox = () => {
   return (
         <FileTree/>
   )

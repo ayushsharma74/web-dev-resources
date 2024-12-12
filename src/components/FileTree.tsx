@@ -1,4 +1,5 @@
 import { File, Folder, Tree } from "@/components/ui/file-tree";
+import Link from "next/link";
 
 export function FileTree() {
   return (
@@ -21,34 +22,58 @@ export function FileTree() {
         ]}
         elements={ELEMENTS}
       >
-        <Folder element="Web Development Resources" value="1">
-          <Folder value="2" element="app">
-            <File value="3">
-              <p>layout.tsx</p>
+        <Folder value="1" element="Frontend">
+          <Folder value="2" element="HTML">
+            <File value={"3"}>
+              <Link href={"https://www.youtube.com/watch?v=HcOc7P5BMi4"}>
+                <p>Crash Cource By Apna College</p>
+              </Link>
             </File>
-            <File value="4">
-              <p>page.tsx</p>
+            <File value={"4"}>
+              <Link href={"https://www.youtube.com/watch?v=BsDoLVMnmZs"}>
+                <p>Crash Cource By Code With Harry</p>
+              </Link>
             </File>
-          </Folder>
-          <Folder value="5" element="components">
-            <Folder value="6" element="ui">
-              <File value="7">
-                <p>button.tsx</p>
-              </File>
-            </Folder>
-            <File value="8">
-              <p>header.tsx</p>
-            </File>
-            <File value="9">
-              <p>footer.tsx</p>
+            <File value={"5"}>
+              <Link href={"https://www.youtube.com/watch?v=qz0aGYrrlhU"}>
+                <p>Crash Cource By Code With Mosh</p>
+              </Link>
             </File>
           </Folder>
-          <Folder value="10" element="lib">
-            <File value="11">
-              <p>utils.ts</p>
+          <Folder value="6" element="CSS">
+            <File value={"7"}>
+              <Link href={"https://www.youtube.com/watch?v=K1naz9wBwKU"}>
+                <p>Crash Cource By Sherians Coding School (Recommended)</p>
+              </Link>
+            </File>
+            <File value={"7"}>
+              <Link href={"https://www.youtube.com/watch?v=uDkjZ-UjgX0&t=198s"}>
+                <p>Crash Cource By ByteGrad</p>
+              </Link>
+            </File>
+            <File value={"9"}>
+              <Link href={"https://www.youtube.com/watch?v=xN1BkNItTRk"}>
+                <p>FlexBox Tutorial By ByteGrad (Highly Recommended)</p>
+              </Link>
+            </File>
+            <File value={"10"}>
+                <Link href={"https://www.youtube.com/watch?v=nSst4-WbEZk"}>
+                <p>Box Model Tutorial</p>
+                </Link>
+            </File>
+          </Folder>
+          <Folder value="11" element="JavaScript">
+            <File value={"12"}>
+              <Link href={"https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"}>
+              <p>Chai aur Code Playlist (Highly Recommended)</p>
+              </Link>
             </File>
           </Folder>
         </Folder>
+        {/* <Folder value="2" element="Backend"></Folder>
+        <Folder value="3" element="Database"></Folder> */}
+
+        
       </Tree>
     </div>
   );

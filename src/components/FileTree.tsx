@@ -3,9 +3,13 @@ import Link from "next/link";
 
 export function FileTree() {
   return (
-    <div className="relative flex h-[600px] w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+    <div className="relative flex h-[600px] w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg border border-slate-700 bg-black md:shadow-xl">
+      <div className="bg-zinc-900 text-gray-300 text-3xl font-bold border-b border-slate-700 flex items-center justify-center w-full h-14 py-5">
+
+       Web Development Resources
+      </div>
       <Tree
-        className="p-2 overflow-hidden rounded-md bg-background"
+        className="px-7 py-3 overflow-hidden rounded-md bg-zinc-900 text-gray-300 text-3xl font-semibold"
         initialSelectedId="7"
         initialExpandedItems={[
           "1",
@@ -22,6 +26,7 @@ export function FileTree() {
         ]}
         elements={ELEMENTS}
       >
+       
         <Folder value="1" element="Frontend">
           <Folder value="2" element="HTML">
             <File value={"3"}>
@@ -41,14 +46,14 @@ export function FileTree() {
             </File>
           </Folder>
           <Folder value="6" element="CSS">
-            <File value={"7"}>
+            <File value={"90"}>
               <Link href={"https://www.youtube.com/watch?v=K1naz9wBwKU"}>
                 <p>
                   Crash Cource By Sherians Coding School (Highly Recommended)
                 </p>
               </Link>
             </File>
-            <File value={"7"}>
+            <File value={"8"}>
               <Link href={"https://www.youtube.com/watch?v=uDkjZ-UjgX0&t=198s"}>
                 <p>Crash Cource By ByteGrad</p>
               </Link>
@@ -89,8 +94,8 @@ export function FileTree() {
               </Link>
             </File>
           </Folder>
-          <Folder value="12" element="React">
-            <File value={"13"}>
+          <Folder value="15" element="React">
+            <File value={"16"}>
               <Link
                 href={
                   "https://www.youtube.com/playlist?list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige"
@@ -99,22 +104,22 @@ export function FileTree() {
                 <p>Chai aur React Playlist (Highly Recommended)</p>
               </Link>
             </File>
-            <File value={"14"}>
+            <File value={"17"}>
               <Link href={"https://www.youtube.com/watch?v=CgkZ7MvWUAA&t=23s"}>
                 <p>Bro Code 4 Hr Video (Highly Recommended)</p>
               </Link>
             </File>
-            <File value={"15"}>
+            <File value={"18"}>
               <Link href={"https://www.youtube.com/watch?v=wIyHSOugGGw"}>
                 <p>Code Bootcamp React Concepts Explaination</p>
               </Link>
             </File>
-            <File value={"16"}>
+            <File value={"19"}>
               <Link href={"https://www.youtube.com/watch?v=Xe8CkYZvCig"}>
                 <p>Sherians Coding School Crash Cource</p>
               </Link>
             </File>
-            <File value={"17"}>
+            <File value={"20"}>
               <Link
                 href={
                   "https://www.youtube.com/playlist?list=PLwGdqUZWnOp1Rab71vx2zMF6qpwGDB2Z1"
@@ -125,9 +130,9 @@ export function FileTree() {
             </File>
           </Folder>
         </Folder>
-        <Folder value="18" element="Backend">
-          <Folder value="19" element="NodeJS + ExpressJS">
-            <File value={"20"}>
+        <Folder value="21" element="Backend">
+          <Folder value="22" element="NodeJS + ExpressJS">
+            <File value={"23"}>
               <Link
                 href={
                   "https://www.youtube.com/playlist?list=PLu71SKxNbfoBGh_8p_NS-ZAh6v7HhYqHW"
@@ -136,7 +141,7 @@ export function FileTree() {
                 <p>Chai aur Backend Playlist (Highly Recommended) </p>
               </Link>
             </File>
-            <File value={"20"}>
+            <File value={"24"}>
               <Link
                 href={
                   "https://www.youtube.com/playlist?list=PLinedj3B30sDby4Al-i13hQJGQoRQDfPo"
@@ -145,14 +150,14 @@ export function FileTree() {
                 <p>Piyush Garg Playlist </p>
               </Link>
             </File>
-            <File value={"21"}>
+            <File value={"25"}>
               <Link href={"https://www.youtube.com/watch?v=Q-icS7yZz5k&t=15s"}>
                 <p>
                   Sherians Coding School 4 Hr (Not Recommended for Beginners){" "}
                 </p>
               </Link>
             </File>
-            <File value={"22"}>
+            <File value={"26"}>
               <Link
                 href={
                   "https://www.youtube.com/playlist?list=PLbtI3_MArDOkXRLxdMt1NOMtCS-84ibHH"
@@ -163,8 +168,8 @@ export function FileTree() {
             </File>
           </Folder>
         </Folder>
-        <Folder value="23" element="Database">
-          <Folder value="24" element="MongoDB">
+        <Folder value="27" element="Database">
+          <Folder value="28" element="MongoDB">
             <File value={"25"}>
               <Link
                 href={
@@ -248,24 +253,24 @@ export function FileTree() {
             </Link>
           </File>
           </Folder>
-          <Folder value="41" element="Neovim (Not Beginner Friendly)">
-          <File value={"42"}>
+          <Folder value="40" element="Neovim (Not Beginner Friendly)">
+          <File value={"41"}>
             <Link href={"https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn"}>
               <p>Neovim setup Playlist</p>
             </Link>
           </File>
-          <File value={"43"}>
+          <File value={"42"}>
             <Link href={"https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn"}>
               <p>Setting Up Lazyvim (I Use it Btw 😎)</p>
             </Link>
           </File>
-          <File value={"44"}>
+          <File value={"43"}>
             <Link href={"https://arc.net/"}>
               <p>Arc Browser (I Use this for web dev so added it)</p>
             </Link>
           </File>
         </Folder>
-        <Folder value="45" element="TypeScript">
+        <Folder value="44" element="TypeScript">
           <File value={"45"}>
             <Link href={"https://www.youtube.com/watch?v=lVzb6pmel_E&t=11995s"}>
               <p> TypeScript Domaination (Highly Recommended)</p>
@@ -277,47 +282,54 @@ export function FileTree() {
             </Link>
           </File>
         </Folder>
-        <Folder value="46" element="Prisma">
-          <File value={"47"}>
+        <Folder value="47" element="Prisma">
+          <File value={"48"}>
             <Link href={"https://www.youtube.com/watch?v=RebA5J-rlwg&t=155s"}>
               <p>Prisma By Web Dev Simplified (Highly Recommended)</p>
             </Link>
           </File>
-          <File value={"48"}>
+          <File value={"49"}>
             <Link href={"https://www.youtube.com/watch?v=QXxy8Uv1LnQ&t=195s"}>
               <p>ByteGrad Prisma Tutorial (For NextJS)</p>
             </Link>
           </File>
         </Folder>
-        <Folder value="49" element="Zod Validation">
-          <File value={"50"}>
+        <Folder value="50" element="Zod Validation">
+          <File value={"51"}>
             <Link href={"https://www.youtube.com/watch?v=AeQ3f4zmSMs&list=PLK5U0tyd34tANnRkbFeXUbZl_1n9A33zL&index=6"}>
               <p>ByteGrad Zod Tutorial</p>
             </Link>
           </File>
         </Folder>
         </Folder>
-        <Folder value="44" element="Docker">
-          <File value={"45"}>
+        <Folder value="52" element="Docker">
+          <File value={"53"}>
             <Link href={"https://www.youtube.com/watch?v=31k6AtW-b3Y"}>
               <p>Docker By Piyush Garg Part 1</p>
             </Link>
           </File>
-          <File value={"46"}>
+          <File value={"54"}>
             <Link href={"https://www.youtube.com/watch?v=xPT8mXa-sJg"}>
               <p>Docker By Piyush Garg Part 2</p>
             </Link>
           </File>
         </Folder>
-        <Folder value="47" element="Linux">
-          <File value={"48"}>
+        <Folder value="55" element="Linux">
+          <File value={"56"}>
             <Link href={"https://www.youtube.com/watch?v=e01GGTKmtpc&t=990s"}>
               <p>6 Hr Linux One shot cource + DevOps</p>
             </Link>
           </File>
-          <File value={"49"}>
+          <File value={"57"}>
             <Link href={"https://www.geeksforgeeks.org/linux-tutorial/"}>
               <p>Geeks for Geeks Linux Resources (Recommended)</p>
+            </Link>
+          </File>
+        </Folder>
+        <Folder value="58" element="Open Source">
+          <File value={"59"}>
+            <Link href={"https://www.youtube.com/playlist?list=PLinedj3B30sBsmRRL8XyTGadjRGkzRPb7"}>
+              <p>Open Source Contribution Guide</p>
             </Link>
           </File>
         </Folder>
@@ -326,6 +338,7 @@ export function FileTree() {
     </div>
   );
 }
+
 
 const ELEMENTS = [
   {

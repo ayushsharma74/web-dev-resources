@@ -3,7 +3,6 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin, FaDiscord } from "react-icons/fa";
-import SparklesText from "./ui/sparkles-text";
 
 const Socials = () => {
   return (

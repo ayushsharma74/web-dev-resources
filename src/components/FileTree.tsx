@@ -9,7 +9,7 @@ export function FileTree() {
        Web Development Resources
       </div>
       <Tree
-        className="px-7 py-3 overflow-hidden rounded-md bg-zinc-900 text-gray-300 text-3xl font-semibold"
+        className="px-7 py-3 overflow-hidden rounded-md bg-zinc-900 text-gray-300 font-semibold"
         initialSelectedId="7"
         initialExpandedItems={[
           "1",
@@ -332,8 +332,13 @@ export function FileTree() {
               <p>Open Source Contribution Guide</p>
             </Link>
           </File>
+          <File value={"60"}>
+            <Link href={"https://github.com/idontknowjs/gsoc-web-projects"}>
+              <p>GSOC Web Developemnt Projects List</p>
+            </Link>
+          </File>
         </Folder>
-        
+              
       </Tree>
     </div>
   );

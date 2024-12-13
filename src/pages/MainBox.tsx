@@ -1,12 +1,14 @@
-import { FileTree } from '@/components/FileTree'
-import React from 'react'
-
-
+import { FileTree } from "@/components/FileTree";
+import Socials from "@/components/Socials";
+import React from "react";
 
 const MainBox = () => {
   return (
-        <FileTree/>
-  )
-}
+    <div className="flex flex-col items-center flex-grow">
+      <FileTree />
+      <Socials />
+    </div>
+  );
+};
 
-export default MainBox
+export default MainBox;

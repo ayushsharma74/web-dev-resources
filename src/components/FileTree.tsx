@@ -92,7 +92,7 @@ export function FileTree() {
                   "https://www.youtube.com/playlist?list=PLZlA0Gpn_vH9k5ju1yq9qCDqvtuTVgTr6"
                 }
               >
-                <p>Web Dev Simplified Playlist (Whatch after JS Basics)</p>
+                <p>Web Dev Simplified Playlist (Watch after JS Basics)</p>
               </Link>
             </File>
           </Folder>

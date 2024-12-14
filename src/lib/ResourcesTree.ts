@@ -1,3 +1,4 @@
+import { TreeNode } from "@/interfaces/tree-node-interface";
 export const RESOURCE_TREE: TreeNode = {
     id: "root",
     type: "folder",

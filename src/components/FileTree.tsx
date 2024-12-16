@@ -14,7 +14,7 @@ const renderTree = (node: TreeNode) => {
       );
     } else if (node.type === "file") {
       return (
-        <File key={node.id} value={node.id}>
+        <File key={node.id} value={node.id} className="bg-zinc-900">
           {node.link ? (
             <Link href={node.link} target="_blank" rel="noopener noreferrer">
               <p>{node.name}</p>
